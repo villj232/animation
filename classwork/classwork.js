@@ -1,7 +1,7 @@
 /*
   Classwork
 */
-var circleX = 0;
+var ballX = 0;
 var speed = 3;
 
 function setup(){
@@ -10,12 +10,12 @@ function setup(){
 
 function draw(){
   background("white");
-  ellipse(circleX, height/2, 50,50);
+  ellipse(ballX, height/2, 50,50);
 
-  if (circleX >= width){
+  if (ballX >= width){
     speed = -3;
   }
 
-  circleX = circleX + speed;
+  ballX = ballX + speed;
 
 }
